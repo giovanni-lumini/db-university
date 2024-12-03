@@ -25,36 +25,40 @@ Utilizzare https://www.drawio.com/ per la creazione dello schema come visto in c
 ## departments
 - id
 - name
-- main courses
+- main courses id
 - description
 
 ## main_courses
 - id
+- departments id
 - name
 - sub courses
 - description
 
 ## sub_courses
 - id
+- main courses id
 - name
 - topics covered
 - cost
 - capacity
 - numbers of exam appels
 - course duration
+- partecipants (students id)
 
 ## teachers
 - id
 - name
 - surname
-- role
 - courses he teaches
+- role
 
 ## exam appels
+- id
 - type of courses
-- partecipants
-- vote
+- partecipants (students id)
 - date of exam
+- vote
 
 ## students
 - id
