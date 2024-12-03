@@ -23,52 +23,52 @@ Utilizzare https://www.drawio.com/ per la creazione dello schema come visto in c
 ## tables structure
 (nomi delle colonne e tipo di dati che sono accettati)
 ## departments
-- id
-- name
-- main courses id
-- description
+- id | bigint - auto_increment - primary_key (unique, not null)
+- name | varchar (50) - not null
+- main courses id | varchar (255) - not null
+- description | text(500) - null
 
 ## main_courses
-- id
-- departments id
-- name
-- sub courses
-- description
+- id | bigint - auto_increment - primary_key (unique, not null)
+- departments id | bigint - primary_key (unique, not null)
+- name | varchar (50) - not null
+- sub courses | varchar (255) - not null
+- description | text(500) - null
 
 ## sub_courses
-- id
-- main courses id
-- name
-- topics covered
-- cost
-- capacity
-- numbers of exam appels
-- course duration
-- partecipants (students id)
+- id | bigint - auto_increment - primary_key (unique, not null)
+- main courses id | bigint - primary_key (unique, not null)
+- name | varchar (50) - not null
+- topics covered | varchar (255) - not null
+- cost | float (8,2) - not null
+- capacity | tinyint - null
+- numbers of exam appels | tinyint - not null
+- course duration | tinyint - not null
+- partecipants (students id) | bigint - primary_key (unique, not null)
 
 ## teachers
-- id
-- name
-- surname
-- courses he teaches
-- role
+- id | bigint - auto_increment - primary_key (unique, not null)
+- name | varchar (50) - not null
+- surname | varchar (50) - not null
+- courses he teaches | varchar (255) - null
+- role | varchar (50) - null
 
 ## exam appels
-- id
-- type of courses
-- partecipants (students id)
-- date of exam
-- vote
+- id | bigint - auto_increment - primary_key (unique, not null)
+- type of courses | varchar (50) - not null
+- partecipants (students id) | text(500) - null
+- date of exam | datetime - null
+- vote | tinyint - not null
 
 ## students
-- id
-- name
-- surname
-- aob
-- address
-- email
-- cell
-- year of attendance
+- id | bigint - auto_increment - primary_key (unique, not null)
+- name | varchar (50) - not null
+- surname | varchar (50) - not null
+- aob | date - not null
+- address | varchar (50) - null
+- email | varchar (50) - null
+- cell | varchar(14) - null
+- year of attendance | tinyint - null
 
 
 
