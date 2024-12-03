@@ -23,21 +23,49 @@ Utilizzare https://www.drawio.com/ per la creazione dello schema come visto in c
 ## tables structure
 (nomi delle colonne e tipo di dati che sono accettati)
 ## departments
-
+- id
+- name
+- main courses
+- description
 
 ## main_courses
-
+- id
+- name
+- sub courses
+- description
 
 ## sub_courses
-
+- id
+- name
+- topics covered
+- cost
+- capacity
+- numbers of exam appels
+- course duration
 
 ## teachers
-
+- id
+- name
+- surname
+- role
+- courses he teaches
 
 ## exam appels
-
+- type of courses
+- partecipants
+- vote
+- date of exam
 
 ## students
+- id
+- name
+- surname
+- aob
+- address
+- email
+- cell
+- year of attendance
+
 
 
 
