@@ -96,13 +96,17 @@ WHERE `id` = 1
 
 
 # Group by:
-Contare quanti iscritti ci sono stati ogni anno
+1-Contare quanti iscritti ci sono stati ogni anno
+SELECT `enrolment_date`, COUNT(id)
+FROM `students`
+GROUP BY `enrolment_date`
+ORDER BY `enrolment_date`
 
-Contare gli insegnanti che hanno l'ufficio nello stesso edificio
+2-Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
-Calcolare la media dei voti di ogni appello d'esame
+3-Calcolare la media dei voti di ogni appello d'esame
 
-Contare quanti corsi di laurea ci sono per ogni dipartimento
+4-Contare quanti corsi di laurea ci sono per ogni dipartimento
 
 # Joins:
 Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
